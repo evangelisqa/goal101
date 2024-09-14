@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registratio form</title>
+    <link rel="stylesheet" href="styles/register.css">
+    <script src="scripts/register.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Create an Account</h1>
+        <nav>
+            <ul>
+                <li><a href="myhome.html">Home</a></li>
+                <li><a href="mycontactus.html">Contact Us</a></li>
+                <li><a href="mylogin.html">Log In</a></li>
+                <li><a href="mylearnmore.html">Learn More</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <section id="register-form">
+            <h2>Register</h2>
+            <form action="submit_register.php" method="post">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account?<a href="href=login.html">Log in here</a></p>
+        </section>
+    </main>
+</body>
+</html>
