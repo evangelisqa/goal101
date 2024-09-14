@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Greetings Cards</title>
+    <link rel="stylesheet" href="styles/mylogin.css">
+    <script src="scripts/mylogin.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Greeting Cards</h1>
+        <nav>
+            <ul>
+                <li><a href="myhome.html">Home</a></li>
+                <li><a href="mycontactus.html">Contact Us</a></li>
+                <li><a href="mylogin.html">Log In</a></li>
+                <li><a href="mylearnmore.html">Learn More</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="login-form">
+            <h2>Log In</h2>
+            <form action="submit_login.php" method="post">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+                <p>Don't have an account?<a href="register.html">Create one here</a>
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span>
+            Greeting Cards. All right reserved. </p>
+        </p>
+        <div id="lastModified"></div>
+        <ul>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https:twitter.com">Twitter</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
